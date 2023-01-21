@@ -1,0 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Pacifico", cursive;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* --bg-color: #fff;
+  --text-color: #f8f8ff;
+  --second-color: #5a7184;
+  --main-color: #6e54fa; */
+  : 6rem;
+  : 3rem;
+  : 1.1rem;
+}
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 30px 18%;
+  transition: ease 0.4s;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffff00;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar a {
+  color: #ffff00;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 4px;
+  transition: ease 0.4s;
+}
+
+.navbar a:hover {
+  background: none;
+  color: #fff;
+  box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+  border-radius: 4px;
+}
+
+#menu-icon {
+  color: #ffff00;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+/* Awal Menu */
+section {
+  padding: 80px 18%;
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+.home-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #fff;
+  font-family: "Paytone One", sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+.home-text p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 50px;
+}
+
+.home-btn {
+  display: inline-block;
+  font-size: 19px;
+  padding: 15px 30px;
+  background: #ffffffbf;
+  color: #ffff00;
+  border-radius: 4px;
+  transition: ease 0.4s;
+  font-weight: bold;
+}
+.home-btn:hover {
+  background: #ffffffbf;
+  transform: scale(1.1);
+}
+
+/* Toggel Scroll */
+header.sticky {
+  background: #fff;
+  color: #000;
+  padding: 10px 18%;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.sticky .logo {
+  color: #000;
+}
+
+.sticky .navbar a {
+  color: #000;
+}
+
+/* Awal Menu */
+.text h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+.row-items{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.container-box {
+  background: #fff;
+  border: 1px solid #f0eded;
+  padding: 50px 10px;
+  border-radius: 4px;
+  transition: all 1s ease 0s;
+  cursor: pointer;
+}
+
+.container-img img {
+  height: 250px;
+  width: 250px;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+  border-radius: 4px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.container-box h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.container-box h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.container-box:hover{
+    box-shadow: 5px 30px 56.1276px rgba(55 55 55 / 12%);
+    border: 1px solid transparent;
+    transform: transLateY(-3px);
+}
+.stars i{
+    font-size: 15px;
+}
+
+/* Awal Gallery */
+.gallery{
+    background-color: #eee;
+}
+.title{
+    text-align: center;
+}
+.package-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+.thum{
+    position: relative;
+    transition: all .3s cubic-bezier(.444, .05, .55, .95);
+    will-change: filter;
+    cursor: pointer;
+}
+.thum img{
+    width: 100%;
+    height: auto;
+}
+.thum:hover{
+  transform: scale(1.05);
+}
+
+/* Awal About */
+.about-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+.col-content{
+  position: relative;
+}
+.col-content img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  boder-radius: 15px;
+  filter: brightness(80%);
+  transition: all .3s cubic-bezier(.444, .05, .55, .95);
+  will-change: filter;
+}
+.col-content h5{
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  padding: 20px 0;
+}
+.col-content p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 5px 0;
+}
+
+/* Awal Footer */
+#contact{
+  background: #eee;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer{
+  padding: 20px 0;
+}
+.list{
+  width: 25%;
+}
+.list h4{
+  font-size: 21px;
+  color: #000;
+  margin-bottom: 30px;
+  position: relative;
+}
+.list h4::before{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  left: 0;
+  bottom: -10px;
+  background: #000;
+}
+
+.list ul li:not(last-child){
+  margin-bottom: 16px;
+}
+.list ul li a{
+  color: black;
+  font-size: 1.1rem;
+  display: block;
+  transition: 0.5s;
+}
+.list ul li a:hover{
+  transform: transLateX(14px);
+}
+.list .sosial a{
+  height: 40px;
+  width: 40px;
+  background: #eee;
+  color:black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border:radius: 15px;
+  transition: 0.5s;
+}
+.list .sosial a:hover{
+  transform: scale(1.06);
+}
+
+.end-text{
+  text-align: center;
+  padding-top: 90px;
+}
+.end-text p{
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* Responsive */
+
+@media (max-width: 1400px){
+  header{
+    padding: 17px 3%;
+    transition: .2s;
+  }
+
+  header.sticky{
+    padding: 10px 3%;
+    transition: .2s;
+  }
+  section{
+    padding: 80px 3%;
+    transition: .2s;
+  }
+  :root{
+    : 6rem;
+    : 3rem;
+    : 1.1rem;
+    transition: .2s;
+  }
+}
+
+@media (max-width: 1040px){
+  #menu-icon{
+    display: block;
+  }
+  .sticky #menu-icon{
+    color: #000;
+  }
+  .home{
+    height: 88vh;
+  }
+  .navbar{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 270px;
+    height: 120vh;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    transition: 0.5s all;
+  }
+  .navbar a{
+    display: block;
+    margin: 1.2rem 0;
+  }
+  .sticky .navbar a{
+    color: #fff;
+  }
+  .navbar a:navbar{
+    color: #000;
+  }
+  .open{
+    right: 0;
+  }
+  .list{
+    width: 50%;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 575px){
+  .list{
+    width: 100%;
+  }
+  :root{
+    :3.8rem;
+    :1.8rem;
+    : .2s;
+  }
+  .text{
+    text-align: center;
+  }
+  .home{
+    height: 85vh;
+    transition: .2s;
+  }
+}
